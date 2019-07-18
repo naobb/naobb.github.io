@@ -1,14 +1,14 @@
 <template>
-  <div style="width: 400px; display:block; margin:0 auto;">
-    <carousel :per-page="1" :center-mode="true" >
+  <div style="display:block; margin:0 auto;" class="img-fluid">
+    <carousel :per-page="1" :center-mode="true">
       <slide>
-        <img src="https://placeimg.com/400/300/animals" />
+        <img src="https://placeimg.com/1200/300/animals" />
       </slide>
       <slide>
-        <img src="https://placeimg.com/400/300/nature" />
+        <img src="https://placeimg.com/1200/300/nature" />
       </slide>
       <slide>
-        <img src="https://placeimg.com/400/300/people" />
+        <img src="https://placeimg.com/1200/300/people" />
       </slide>
     </carousel>
   </div>

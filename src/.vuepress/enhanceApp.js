@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import VueTypedJs from 'vue-typed-js';
 import ElementLoading from 'vue-element-loading'
 

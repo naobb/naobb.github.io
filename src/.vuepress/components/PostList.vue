@@ -16,7 +16,7 @@ export default {
             // blogディレクトリ以下を投稿記事一覧表示の対象とする
             .filter(post => post.path.startsWith('/blog/'))
             // dateに設定した日付の降順にソートする
-            .sort((b, a) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+            .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
         }
     },
      filters: {

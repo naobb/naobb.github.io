@@ -6,4 +6,5 @@
   <ImageCarousel />
 </ClientOnly>
 
-<button class="btn btn-primary">Click Me</button>
+<h3>最近のブログ投稿はこちら</h3>
+<PostList />

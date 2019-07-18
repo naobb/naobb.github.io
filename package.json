@@ -1,10 +1,17 @@
 {
   "devDependencies": {
     "@vuepress/plugin-blog": "^1.0.0-alpha.49",
+    "@vuepress/plugin-register-components": "^1.0.0-rc.1",
     "vuepress": "^1.0.0-rc.1"
   },
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src"
+  },
+  "dependencies": {
+    "vue-carousel": "^0.18.0",
+    "vue-element-loading": "^1.1.1",
+    "vue-typed-js": "^0.1.2",
+    "vuejs-loading-plugin": "^1.0.5"
   }
 }

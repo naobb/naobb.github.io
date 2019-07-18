@@ -7,6 +7,17 @@ module.exports = {
     ]
   },
   plugins: [
-    "@vuepress/blog"
+    "@vuepress/blog",
+    // 'vue-spinner', 
+    // {
+    //   components: [
+    //     {
+    //       name: 'Spinner',
+    //       path: '@vuepress/components/Spinner.vue'
+    //     }
+    //   ]
+    //
+    "vuejs-loading-plugin",
+    "vue-typed-js"
   ]
 };

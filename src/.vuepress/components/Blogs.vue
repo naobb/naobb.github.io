@@ -1,6 +1,8 @@
 <template>
-  <div v-for="post in posts">
+  <div>
+    <div v-for="post in posts">
     <a href="post.path">{{post.title}}</a>
+    </div>
   </div>
 </template>
 

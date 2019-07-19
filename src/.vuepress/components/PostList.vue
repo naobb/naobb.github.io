@@ -1,9 +1,12 @@
 <template>
-    <div id="content">
-        <div v-for="post in posts" class="card card-body">
+    <div id="content" class="cf">
+        <div v-for="post in posts" class="card">
+          <div class="card-body">
             <h2 class="card-title"><a v-bind:href="post.path">{{post.title}}</a></h2>
+            <p></p>
             <small>{{post.frontmatter.date || dateFormatter}}</small>
             <a v-bind:href="post.path" id="more">続きを読む</a>
+          </div>
         </div>
     </div>
 </template>
@@ -29,19 +32,34 @@ export default {
 
 <style>
 #content {
-  float: both;
-  width: 600px;
-}
-#more {
-  display: block;
-  float: right;
+  /* float: both; */
+  width: 690px;
+  margin-bottom: 30px;
+
 }
 
 .card {
-  width: 35%;
-  margin-top: 20px;
-  margin-right: 10px;
-  margin-bottom: 20px;
+  width: 33%;
+  height: 120px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  /* margin-bottom: 10px; */
   float: left;
+  position: relative
+}
+
+h2>a{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cf::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 </style>

@@ -1,6 +1,8 @@
-<Typedjs />
+---
+home: true
+---
 
-<Blogs />
+<Typedjs />
 
 <ClientOnly>
   <ImageCarousel />
@@ -8,3 +10,4 @@
 
 <h3 style="color:#3eaf7c;">最近のブログ投稿はこちら</h3>
 <PostList />
+<Footer />
